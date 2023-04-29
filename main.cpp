@@ -56,7 +56,7 @@ int main()
 	cout << '\n';
 
 	int* newArraySize = new int;
-	cout << "Enter the size of an new array:";
+	cout << "Enter the size of the array:";
 	cin >> *newArraySize;
 
 	array = changeArraySize(array, *arraySize, *newArraySize);
