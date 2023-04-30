@@ -47,6 +47,8 @@ int main()
 
 	}
 
+	cout << "Value of the array:" << '\n';
+
 	for (int i = 0; i < *arraySize; i++){
 	
 		cout << *(array + i) << ' ';
@@ -56,12 +58,14 @@ int main()
 	cout << '\n';
 
 	int* newArraySize = new int;
-	cout << "Enter the size of the array:";
+	cout << "Enter the value of resizing the array(Initial):";
 	cin >> *newArraySize;
 
 	array = changeArraySize(array, *arraySize, *newArraySize);
 
 	delete arraySize;
+	
+	cout << "Value of the array after resizing(resized):" << '\n';
 
 	for (int i = 0; i < *newArraySize; i++){
 	
